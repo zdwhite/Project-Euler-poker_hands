@@ -39,3 +39,11 @@ Full House W/ Three Fours Full House W/ Three Threes
 The file, poker.txt, contains one-thousand random hands dealt to two players. Each line of the file contains ten cards (separated by a single space): the first five are Player 1's cards and the last five are Player 2's cards. You can assume that all hands are valid (no invalid characters or repeated cards), each player's hand is in no specific order, and in each hand there is a clear winner.
 
 How many hands does Player 1 win?
+
+Problems to tackle:
+    Ranking :  A generalized function that can take in a poker hand and assign is a value
+      This function may require creating lists of all the possible combinations for each hand type then 
+
+    Parsing :   A function to parse the poker.txt file into poker hands for player 1 and player 2
+
+    Comparing /  Returning SUM : a function that will compare the rank of a hand to another hand and out put the winner and returns a running total
