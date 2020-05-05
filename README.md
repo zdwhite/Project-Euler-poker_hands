@@ -41,9 +41,10 @@ The file, poker.txt, contains one-thousand random hands dealt to two players. Ea
 How many hands does Player 1 win?
 
 Problems to tackle:
-    Ranking :  A generalized function that can take in a poker hand and assign is a value
-      This function may require creating lists of all the possible combinations for each hand type then 
-
     Parsing :   A function to parse the poker.txt file into poker hands for player 1 and player 2
+
+    Ranking :  A generalized function that can take in a poker hand and determine what the poker hand is
+      Create a toy function that just determines the high cards
+
 
     Comparing /  Returning SUM : a function that will compare the rank of a hand to another hand and out put the winner and returns a running total
