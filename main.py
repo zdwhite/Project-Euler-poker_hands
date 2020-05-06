@@ -31,12 +31,21 @@ def high_card(hand):
     high_card=[0]
     for card in cards_in_hand:
         rank_card = card_rank.index(card[0])+1
-        print("Highest card rank: {}\n Current card rank: {} ".format(high_rank[0],rank_card))
+        #print("Highest card rank: {}\n Current card rank: {} ".format(high_rank[0],rank_card))
         if  rank_card > high_rank[0]:
             high_rank[0] = card_rank.index(card[0])
             high_card[0] = card
 
-    print(high_rank, " ",high_card, " " ,hand)
+    return high_card
+
+def parse_hand(hand):
+    cards_in_hand = hand.split(" ")
+    rank = []
+    suits = []
+    for cards in cards_in_hand:
+        rank.append(cards[0])
+        suits.append(cards[1])
+    return rank, suits
 
 def main():
     file_name = 'poker.txt'
@@ -46,7 +55,9 @@ def main():
     #print(player_1[:5],"\n",player_2[:5])
 
     print(player_1[0].split(" "))
-    high_card(player_1[0])
+    #high_card(player_1[0])
+    print(parse_hand(player_1[0]))
+
 
 
     # run the functions defined above
